@@ -1,0 +1,116 @@
+.center-container {
+  padding-left: 45em;
+  padding-top: 20em;
+  padding-bottom: 30em;
+}
+
+h2,
+h3 {
+  font-family: "Figtree";
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  font-weight: lighter;
+  font-size: 1.2em;
+  color: #ffffff;
+  top: -30em;
+  line-height: 2;
+  letter-spacing: 0.1em;
+  animation: entering 1s forwards, pulse 3s;
+  animation-delay: 12.5s;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+span {
+  font-weight: 800;
+  margin-left: 0.4em;
+}
+
+.introductie-button {
+  background-color: transparent;
+  border: transparent;
+  animation: entering 1s forwards, pulse 3s;
+  animation-delay: 12.5s;
+}
+
+#arrow-right {
+  margin-left: 50em;
+  animation: entering 1s forwards, pulse 3s;
+  animation-delay: 12.5s;
+}
+
+.symbols-rotation img,
+.drop-and-heal-logo {
+  position: absolute;
+  opacity: 0;
+}
+
+.symbols-rotation img {
+  margin-top: -5em;
+  max-width: 25em;
+  animation: fade 12.5s forwards, pulse 4s linear infinite;
+}
+
+.symbols-rotation img:nth-child(1) {
+  animation-delay: 0s;
+}
+.symbols-rotation img:nth-child(2) {
+  animation-delay: 3s;
+}
+.symbols-rotation img:nth-child(3) {
+  animation-delay: 6s;
+}
+.symbols-rotation img:nth-child(4) {
+  animation-delay: 9s;
+}
+
+.drop-and-heal-logo {
+  margin-top: -2em;
+  width: 20%;
+  left: 40%;
+  z-index: 1; /* Above symbols */
+  animation: entering 1s forwards, pulse 3s; /* Fade in */
+  animation-delay: 12.5s; /* Wait for all symbols */
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  25% {
+    opacity: 0.4;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes entering {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.9;
+  }
+}

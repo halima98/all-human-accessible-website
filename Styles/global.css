@@ -1,0 +1,155 @@
+/**************************************************
+*                Global Stylesheet                *
+*                  global.css                     *
+**************************************************/
+
+/* ------- Reset and Global Box Sizing ------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/**************************************************
+*                  Font Faces                     *
+**************************************************/
+
+/* Figtree Light - weight 300 */
+@font-face {
+  font-family: "Figtree";
+  font-weight: 300;
+  src: url("/assets/fonts/figtree-300-normal.woff2") format("woff2"),
+    url("/assets/fonts/figtree-300-normal.woff") format("woff");
+}
+
+/* Figtree Regular - weight 400 */
+@font-face {
+  font-family: "Figtree";
+  font-weight: 400;
+  src: url("/assets/fonts/figtree-400-normal.woff2") format("woff2"),
+    url("/assets/fonts/figtree-400-normal.woff") format("woff");
+}
+
+/* Figtree Italic - weight 400 */
+
+/* Figtree Medium - weight 500 */
+@font-face {
+  font-family: "Figtree";
+  font-weight: 500;
+  src: url("../assets/fonts/figtree-500-normal.woff2") format("woff2"),
+    url("../assets/fonts/figtree-500-normal.woff") format("woff");
+}
+
+/* Figtree Bold - weight 700 */
+@font-face {
+  font-family: "Figtree";
+  font-weight: 700;
+  src: url("/assets/fonts/figtree-700-normal.woff2") format("woff2"),
+    url("/assets/fonts/figtree-700-normal.woff") format("woff");
+}
+
+/* Calvino Grande Extra Bold - weight 800 */
+@font-face {
+  font-family: "Calvino Grande";
+  font-weight: 800;
+  src: url("../assets/fonts/calvino-grande-800.woff") format("woff");
+}
+
+/**************************************************
+*               Base Typography                   *
+**************************************************/
+body {
+  background-color: #111111;
+  color: #f5f5f5;
+}
+
+/* ------- PROGRESS BAR STYLES ------- */
+
+.steps-container {
+  display: flex;
+  margin-bottom: 8em;
+  margin-top: 2em;
+  padding-left: 10em;
+  padding-right: 10em;
+}
+
+.step {
+  width: 10em;
+  background-color: #4d4d4d;
+  margin-right: 0.3em;
+  height: 0.2em;
+}
+
+.first {
+  background-color: #f5f5f5;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+}
+
+.last {
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+
+/* ------- BUTTON STYLES ------- */
+
+button {
+  font-size: 1em;
+  cursor: pointer;
+  color: #f5f5f5;
+  background-color: transparent;
+}
+
+.material-icons,
+.material-symbols-rounded {
+  color: #f5f5f5;
+  font-size: 2em;
+}
+
+/**************************************************
+*                Reusable Animations               *
+*                  global.css                      *
+**************************************************/
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes entrance {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
